@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css伪类选择器</title>
+    <style>
+        a:link{/*这里的link可以省略*/
+           color: red; 
+        }
+        a:visited{
+            color: lime;
+        }
+        a:hover{
+            color: olive;
+        }
+        a:active{
+            color: rebeccapurple;
+        }
+        input:focus{
+            outline:1px solid #foo
+        }
+        ul li:first-child{
+            color: red;
+        }
+        ul li:last-child{
+            color:saddlebrown
+        }
+        ul li:nth-child(2){
+            color: slateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://">test</a>
+
+    <input type="text">
+
+    <ul>
+        <li>aaa</li>
+        <li>aaa</li>
+        <li>aaa</li>
+        <li>aaa</li>
+    </ul>
+</body>
+</html>

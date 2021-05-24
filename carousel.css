@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+   text-decoration: none; 
+}
+.carousel{
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;/*相对定位*/
+    /*overflow: hidden;*/
+}
+/*1.轮播组图*/
+.carousel-imgs{
+    width: 9999px;
+}
+.carousel-imgs li{
+    float: left;
+}
+.carousel-imgs img{
+    width: 1000px;
+    height: 300px;
+}
+/*2.控制器*/
+.prev,.next{
+    width: 32px;
+    height: 32px;
+    position: absolute;/*绝对定位，脱离文档流,它相当于position:relative定意的元素进行定位*/
+    top: 50%;
+    margin-top: -16px;
+}
+.prev{
+    background-image: url(./img/prev.JPG);
+    left: 10px;
+}
+.next{
+    background-image: url(./img/next.JPG);
+    right: 10px;
+}
+/*3.计数器*/
+.count{
+    width: 600px;
+    height: 10px;
+    position: absolute;
+    bottom: 25px;
+}
+.count ul{
+    width: 60px;
+    height: 10px;
+    margin: 0 auto;
+    background-color: rgb(245, 231, 231);
+}
+.count ul li{
+    width: 10px;
+    height: 10px;
+    cursor: pointer;/*将鼠标形状设为手形*/
+    background-color:rgb(248, 241, 241);
+    opacity: .5;/*不透明度，取值范围：0-1之间的一个数字，可以是小数*/
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;/*圆角*/
+}
+.count .active{
+    background-color: #102bad;
+    opacity: 1;
+}
