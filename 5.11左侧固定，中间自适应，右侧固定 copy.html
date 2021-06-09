@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 左右侧固定，中间自适应</title>
+    <style>
+       .container{
+            color: cornsilk;
+           overflow: hidden;
+
+       }
+       .left,.right{
+           float: left;
+           height: 200px;
+           line-height: 200px;
+           position: relative;
+
+       }
+       .left{
+           width: 200px;
+           background-color: rgb(189, 207, 124);
+           margin-right: -200px;
+       }
+       .center{
+           float: left;
+           width: 100%;
+           height: 200px;
+           background-color: rgb(250, 184, 184);
+       }
+       .content{
+           margin: 0 200px;
+       }
+       .right{
+           background-color: rgb(100, 184, 233);
+           width: 150px;
+           margin-left: -150px;
+       }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="left">左侧固定</div>
+    <div class="center">
+        <div class="content">中间自适应</div>
+    </div>
+    <div class="right">右侧固定</div>
+</div>
+</div>
+</body>
+</html>

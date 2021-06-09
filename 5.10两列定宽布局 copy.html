@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 两列定宽布局</title>
+    <style>
+        body{
+            font-size: 18px;
+            min-width: 600px;
+        }
+        .container{
+            width: 1000px;
+            overflow: hidden;
+        }
+        .left{
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-color: rgb(250, 155, 155);
+            color: rgb(64, 20, 226);
+           
+        }
+        .right{
+            width: 780px;
+            height: 200px;
+            float: right;
+            background-color: rgb(226, 241, 159);
+            color: blue;
+            
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="left">左侧固定</div>
+    <div class="right">右侧固定</div>
+</div>
+</body>
+</html>

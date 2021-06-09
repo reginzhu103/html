@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 左侧自适应，中间和右侧固定</title>
+    <style>
+       .container{
+            color: cornsilk;
+           overflow: hidden;
+
+       }
+       .left{
+           width: 100%;
+           float: left;
+           background-color: rgb(240, 160, 160);
+           margin-right: -300px;
+        }
+        .content{
+           height: 200px;
+           line-height: 200px;
+           margin-right: 300px;
+        }
+       .center,.right{
+           float: right;
+           width: 150px;
+           height: 200px;
+           line-height: 200px;
+          
+       }
+       .center{
+           background-color: rgb(125, 238, 122);
+       }
+
+      
+       .right{
+           background-color: rgb(100, 184, 233);
+           
+       }
+    </style>
+</head>
+
+<body>
+    <container>
+        <div class="left">
+            <div class="content">左侧自适应左侧自适应左侧自适应左侧自适应左侧自适应左侧自适应左侧自</div>
+        </div>
+        <div class="right">右侧定宽</div>
+        <div class="center">中间定宽</div>
+    </container>
+</body>
+</html>
